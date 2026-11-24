@@ -1,10 +1,10 @@
-"""Tests für die Regel-Engine. Entferne den Skip, sobald note_name() implementiert ist."""
+"""Tests for the rule engine. Remove the skips as the matching features are implemented."""
 
 import pytest
 
 from notenamer.pitch import note_name
 
-pytestmark = pytest.mark.skip(reason="note_name() noch nicht implementiert")
+pytestmark = pytest.mark.skip(reason="note_name() not implemented yet")
 
 
 def test_treble_bottom_line_is_e():
