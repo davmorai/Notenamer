@@ -1,10 +1,10 @@
-# Textdateien: im Repo normalisiert, im Arbeitsverzeichnis mit CRLF
+# Text files: stored normalized in the repo, checked out with CRLF
 * text=auto eol=crlf
 
-# Shell-Skripte brauchen LF, sonst laufen sie unter Linux/Docker nicht
+# Shell scripts need LF, otherwise they fail on Linux/Docker
 *.sh text eol=lf
 
-# Binärdateien nie umwandeln
+# Never convert binary files
 *.png binary
 *.jpg binary
 *.jpeg binary

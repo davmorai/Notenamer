@@ -8,7 +8,7 @@ build/
 .pytest_cache/
 .ruff_cache/
 
-# Daten und Modelle (nie committen)
+# Data and models (never commit)
 data/*
 !data/README.md
 !data/corpus.csv

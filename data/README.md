@@ -1,20 +1,20 @@
-# Daten
+# Data
 
-Notenblätter, MusicXML-Dateien, Trainingsdaten und Modelle werden **nicht** committet
-(siehe `.gitignore`). Hier liegen nur diese Beschreibung und `corpus.csv`.
+Sheet music, MusicXML files, training data and models are **not** committed
+(see `.gitignore`). Only this description and `corpus.csv` live here.
 
-Vorgesehene Struktur (lokal):
+Intended structure (local):
 
 ```
 data/
-  raw/          # Original-PDFs und MusicXML des Testkorpus
-  reference/    # Referenz-Notennamen pro Stück (aus MusicXML erzeugt)
-  synthetic/    # Synthetische Trainingsbilder + YOLO-Labels
-  deepscores/   # DeepScores V2 (konvertiert)
+  raw/          # original PDFs and MusicXML of the test corpus
+  reference/    # reference pitches per piece (generated from MusicXML)
+  synthetic/    # synthetic training images + YOLO labels
+  deepscores/   # DeepScores V2 (converted)
 ```
 
-**Wichtig:** Stücke aus dem Testkorpus werden nie fürs Training verwendet,
-sonst sind die Messwerte wertlos.
+**Important:** pieces from the test corpus are never used for training,
+otherwise the measurements are worthless.
 
-In `corpus.csv` steht pro Stück die Quelle und die geprüfte Lizenz.
-Für die öffentliche Demo nur gemeinfreie Stücke verwenden.
+`corpus.csv` lists the source and the verified license of each piece.
+Use only public-domain or openly licensed scores for the public demo.

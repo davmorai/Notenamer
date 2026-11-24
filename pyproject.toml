@@ -1,7 +1,7 @@
 [project]
 name = "notenamer"
 version = "0.1.0"
-description = "Schreibt Notennamen automatisch in Klavier-Noten-PDFs."
+description = "Automatically writes note names into piano sheet music PDFs."
 readme = "README.md"
 requires-python = ">=3.12"
 license = "AGPL-3.0-or-later"
@@ -26,11 +26,11 @@ packages = ["src/notenamer"]
 line-length = 100
 target-version = "py312"
 
+[tool.ruff.format]
+line-ending = "cr-lf"
+
 [tool.ruff.lint]
 select = ["E", "F", "I", "UP", "B"]
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]
-
-[tool.ruff.format]
-line-ending = "cr-lf"

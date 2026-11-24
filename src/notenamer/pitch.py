@@ -1,7 +1,7 @@
-"""Regel-Engine: aus Schlüssel, Linienposition und Vorzeichen einen Notennamen bestimmen.
+"""Rule engine: determine a note name from clef, staff position and accidentals.
 
-Dieses Modul ist bewusst frei von ML. Es wird vollständig mit Unit-Tests abgesichert,
-damit sich später jeder Fehler eindeutig dem Modell oder der Logik zuordnen lässt.
+This module deliberately contains no ML. It is fully covered by unit tests so that
+every later error can be attributed clearly to either the model or the logic.
 """
 
 from typing import Literal
@@ -18,18 +18,18 @@ def note_name(
     accidentals_in_measure: dict[int, Accidental],
     naming: Naming = "de",
 ) -> str:
-    """Bestimmt den Namen einer Note.
+    """Return the name of a note.
 
     Args:
-        clef: Schlüssel am Anfang bzw. an dieser Stelle des Systems.
-        staff_position: Position auf dem System. 0 = unterste Linie, 1 = erster Zwischenraum,
-            2 = zweite Linie usw. Negative Werte und Werte über 8 liegen auf Hilfslinien.
-        key_signature: Generalvorzeichen. Positiv = Anzahl Kreuze, negativ = Anzahl b, 0 = keine.
-        accidentals_in_measure: Versetzungszeichen, die in diesem Takt vor dieser Note bereits
-            gesetzt wurden, als {staff_position: Vorzeichen}. Sie gelten bis zum Taktstrich.
-        naming: "de" (C D E F G A H, Fis, B) oder "en" (C D E F G A B, F#, Bb).
+        clef: Clef at the start of the staff or at this point in the staff.
+        staff_position: Position on the staff. 0 = bottom line, 1 = first space,
+            2 = second line and so on. Negative values and values above 8 are on ledger lines.
+        key_signature: Positive = number of sharps, negative = number of flats, 0 = none.
+        accidentals_in_measure: Accidentals already set in this measure before this note,
+            as {staff_position: accidental}. They apply until the barline.
+        naming: "de" (C D E F G A H, Fis, B) or "en" (C D E F G A B, F#, Bb).
 
     Returns:
-        Den Notennamen, z. B. "Fis" oder "F#".
+        The note name, e.g. "Fis" or "F#".
     """
-    raise NotImplementedError("Siehe Issue «note_name(): Tonhöhe aus Schlüssel und Linienposition»")
+    raise NotImplementedError("See issue 1.1")
