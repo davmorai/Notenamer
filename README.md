@@ -1,3 +1,5 @@
+![CI](https://github.com/davmorai/Notenamer/actions/workflows/ci.yml/badge.svg)
+
 # Daten
 
 Notenblätter, MusicXML-Dateien, Trainingsdaten und Modelle werden **nicht** committet
