@@ -432,6 +432,7 @@ def gh(*args: str, input_text: str | None = None) -> str:
 
 
 def main() -> None:
+    sys.stdout.reconfigure(encoding="utf-8")  # Umlaute auch in Windows-Konsolen
     if shutil.which("gh") is None:
         sys.exit("GitHub CLI nicht gefunden. Installation: https://cli.github.com")
 
