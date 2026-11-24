@@ -1,4 +1,4 @@
-# NoteNamer
+# notenamer
 
 ![CI](https://github.com/davmorai/Notenamer/actions/workflows/ci.yml/badge.svg)
 
