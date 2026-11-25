@@ -38,3 +38,6 @@ Notenamer/
 | 25.11.2026 | Chopin Op. 28 No. 4 converted from LilyPond | Openly licensed source (CC BY-SA 4.0); its own PDF has a different engraving than the MusicXML, a realistic test. |
 | 25.11.2026 | Test corpus never used for training | Otherwise the measurements are worthless. |
 | 25.11.2026 | Changelog per version instead of a session log | Git history, pull requests and issues already record what happened; the changelog records what changed for users. |
+| 25.11.2026 | Openly licensed sources of the test corpus are committed in `data/external/`, only the pages needed | Small (one page: 94 KB instead of 1 MB for the whole book); makes the corpus reproducible on every PC without downloads. |
+| 25.11.2026 | Training data is never committed, only the scripts that generate it | Training data quickly reaches gigabytes; the scripts keep it reproducible. |
+| 25.11.2026 | Training data comes from labelled sources (DeepScores V2, synthetic data via Verovio), not from plain PDFs | Object detection needs bounding boxes; plain PDFs would require annotating thousands of symbols by hand. |
