@@ -1,4 +1,4 @@
-"""Build data/raw/<id>/score.musicxml from data/corpus.csv."""
+"""Build data/raw/<id>/ (score.musicxml and, if available, score.pdf) from data/corpus.csv."""
 
 import csv
 import pathlib
@@ -19,4 +19,7 @@ with open("data/corpus.csv", encoding="utf-8", newline="") as f:
         else:
             print("skipped, unknown source:", row["id"])
             continue
+        pdf_source = row["source_pdf"]
+        if pdf_source.startswith("file:"):
+            shutil.copyfile(pdf_source.removeprefix("file:"), out / "score.pdf")
         print("ok", row["id"])
