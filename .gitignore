@@ -12,6 +12,7 @@ build/
 data/*
 !data/README.md
 !data/corpus.csv
+!data/external/
 runs/
 mlruns/
 *.pt

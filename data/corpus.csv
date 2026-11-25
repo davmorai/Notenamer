@@ -1,1 +1,12 @@
 id,title,composer,difficulty,source_pdf,source_musicxml,license,checked
+mozart-k545-1,Piano Sonata K. 545 mvt. 1 (exposition),W. A. Mozart,easy,MuseScore export,music21:mozart/k545/movement1_exposition.mxl,music21 corpus (local only),no
+cpebach-h186,Keyboard piece H. 186,C. P. E. Bach,medium,MuseScore export,music21:cpebach/h186.mxl,music21 corpus (local only),no
+chopin-mazurka-op6-2,Mazurka Op. 6 No. 2,F. Chopin,medium,MuseScore export,music21:chopin/mazurka06-2.krn,music21 corpus (local only),no
+chopin-prelude-op28-4,Prelude Op. 28 No. 4,F. Chopin,medium,Snortum edition PDF (IMSLP),file:data/external/chopin-op28-4.musicxml,CC BY-SA 4.0 (Knute Snortum),no
+clara-polonaise-op1-1,Polonaise Op. 1 No. 1,C. Schumann,medium,MuseScore export,music21:schumann_clara/polonaise_op1n1.mxl,music21 corpus (local only),no
+clara-polonaise-op1-2,Polonaise Op. 1 No. 2,C. Schumann,medium,MuseScore export,music21:schumann_clara/polonaise_op1n2.mxl,music21 corpus (local only),no
+clara-polonaise-op1-3,Polonaise Op. 1 No. 3,C. Schumann,medium,MuseScore export,music21:schumann_clara/polonaise_op1n3.mxl,music21 corpus (local only),no
+clara-polonaise-op1-4,Polonaise Op. 1 No. 4,C. Schumann,medium,MuseScore export,music21:schumann_clara/polonaise_op1n4.mxl,music21 corpus (local only),no
+schoenberg-op19-2,Six Little Piano Pieces Op. 19 No. 2,A. Schoenberg,medium,MuseScore export,music21:schoenberg/opus19/movement2.mxl,music21 corpus (local only),no
+schoenberg-op19-6,Six Little Piano Pieces Op. 19 No. 6,A. Schoenberg,medium,MuseScore export,music21:schoenberg/opus19/movement6.mxl,music21 corpus (local only),no
+joplin-maple-leaf,Maple Leaf Rag,S. Joplin,hard,MuseScore export,music21:joplin/maple_leaf_rag.mxl,music21 corpus (local only),no
